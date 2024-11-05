@@ -807,4 +807,5 @@ def update_map_and_scoreboard(clickData, color_store, vote_store):
 
 # Run the app
 if __name__ == '__main__':
-    app.run_server(debug=True)
+    #app.run_server(debug=True)
+    app.run_server(debug=True, host='0.0.0.0', port=int(os.getenv("PORT", "10000")))
